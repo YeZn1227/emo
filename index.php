@@ -2,7 +2,6 @@
 function analyzeSentiment($text) {
     $apiKey = $_ENV['HUGGINGFACE_API_TOKEN'];  // 請填入你的 Hugging Face API Key
     $url = "https://api-inference.huggingface.co/models/cardiffnlp/twitter-roberta-base-sentiment";
-    echo $apiKey;
     $headers = [
         "Authorization: Bearer $apiKey",
         "Content-Type: application/json"
